@@ -35,11 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .educations, .achievements, .services, .skills, .teams, .contact, footer{
+.about, .educations, .experience, .achievements, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
 .educations .edu-content, 
+.experience .ach-content,
 .achievements .ach-content, 
 .services .serv-content,
 .skills .skills-content,
@@ -73,7 +74,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -90,7 +91,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(20, 67, 220);
+    background: #4070C8;
 }
 .navbar .max-width{
     display: flex;
@@ -103,7 +104,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -122,7 +123,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -139,7 +140,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(20, 67, 220);
+    background: #4070C8;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -167,7 +168,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/banner.jpg.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -191,23 +192,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: rgb(20, 67, 220);
+    background: #4070C8;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid rgb(20, 67, 220);
+    border: 2px solid #4070C8;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     background: none;
 }
 
@@ -233,29 +234,30 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: rgb(20, 67, 220);
+    background:#4070C8;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(20, 67, 220);
+    border: 2px solid #4070C8;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     background: none;
 }
 
 /* services section styling */
+.experience, 
 .achievements {
     color: #111;
 }
@@ -272,8 +274,11 @@ section .title::after{
     content: "what i leant";
     background: #111;
 }
+.experience .title::after {
+    content: "my experience";
+}
 .achievements .title::after {
-    content: "what i got";
+    content: "what i earned";
 }
 .services .title::after {
     content: "what i provide";
@@ -283,27 +288,34 @@ section .title::after{
     width: calc(100% - 20px);
     margin-bottom: 20px;
 }
-.achievements .ach-content .card {
+.experience .ach-content .card {
     width: calc(50% - 20px);
     margin-bottom: 20px;
 }
-.services .serv-content .card{
+.achievements .ach-content .card {
     width: calc(33% - 20px);
+    margin-bottom: 20px;
+}
+.services .serv-content .card{
+    width: calc(50% - 20px);
     text-align: center;
 }
 .educations .edu-content .card,
+.experience .ach-content .card, 
 .achievements .ach-content .card, 
 .services .serv-content .card{
     background: #222;
     border-radius: 6px;
     padding: 20px 25px;
+    margin: 10px 10px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: rgb(20, 67, 220);
+    background: #4070C8;
 }
 .educations .edu-content .card .box,
+.experience .ach-content .card .box,
 .achievements .ach-content .card .box,
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -313,22 +325,25 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
     color: #fff;
 }
+.experience .ach-content .card .text, 
 .achievements .ach-content .card .text{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
 }
 .educations .edu-content .card .text,
+.experience .ach-content .card .text,
 .achievements .ach-content .card .text,
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.experience .ach-content .card .box p, 
 .achievements .ach-content .card .box p{
     color: white;
 }
@@ -350,18 +365,18 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: rgb(20, 67, 220);
+    background: #4070C8;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(20, 67, 220);
+    border: 2px solid #4070C8;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -389,7 +404,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(20, 67, 220);
+    background: #4070C8;
 }
 .skills-content .right .html::before{
     width: 85%;
@@ -422,7 +437,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: rgb(20, 67, 220);
+    background: #4070C8;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -448,7 +463,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(20, 67, 220);
+    border: 5px solid #4070C8;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -464,7 +479,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid rgb(20, 67, 220)!important;
+    border: 2px solid #4070C8!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -473,7 +488,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: rgb(20, 67, 220)!important;
+    background: #4070C8!important;
 }
 
 /* contact section styling */
@@ -504,7 +519,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: rgb(20, 67, 220);
+    color: #4070C8;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -558,8 +573,8 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid rgb(20, 67, 220);
-    background: rgb(20, 67, 220);
+    border: 2px solid #4070C8;
+    background: #4070C8;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -569,7 +584,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     background: none;
 }
 
@@ -581,7 +596,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: rgb(20, 67, 220);
+    color: #4070C8;
     text-decoration: none;
 }
 footer span a:hover{
@@ -663,6 +678,7 @@ footer span a:hover{
         flex: 100%;
     }
     .educations .edu-content .card, 
+    .experience .ach-content .card,
     .achievements .ach-content .card,
     .services .serv-content .card{
         width: calc(50% - 10px);
@@ -689,6 +705,7 @@ footer span a:hover{
         font-size: 20px;
     }
     .educations .edu-content .card, 
+    .experience .ach-content .card,
     .achievements .ach-content .card,
     .services .serv-content .card{
         width: 100%;
